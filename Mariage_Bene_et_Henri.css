@@ -264,11 +264,6 @@ iframe {
     padding: 20px;
   }
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   body {
     padding: 20px 10px;
   }
