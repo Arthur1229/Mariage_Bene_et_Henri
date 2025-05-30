@@ -1,165 +1,201 @@
-p{
-    color: #008080;
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Quicksand&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-    color: #008080;
-    font-family: 'Great Vibes', cursive;
-    font-size: 100px;
-    text-align:center;
-    margin:auto;
-    margin-bottom: 50px;
-    text-decoration: underline;
-    background-color: white;
-}
-h2{
-    color: #008080;
-    /*font-family: 'Great Vibes', cursive;*/
-    font-size: 50px;
-    text-align:center;
-    margin:auto;
-    margin-bottom: 50px;
-    text-decoration: underline;
-    background-color: white;
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-body{
-    /*background: linear-gradient(90deg, rgb(0, 255, 255), #2ebf4d);*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #008080;
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 8em;
+  margin-bottom: 0.2em;
+  color: white;
 }
-header{
-    background-color: white;
+
+header h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.Barre_nav {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Barre_nav:hover {
+  background-color: white;
+  color: #008080;
+}
+
+main p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.etape-container {
+  margin-bottom: 60px;
+}
+
+.etape-ligne {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bullet {
+  font-size: 1.5em;
+  color: white;
+  transform: translateY(6px);
+  margin-right: 10px;
+}
+
+.texte-et-soulignement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.soulignement {
+  width: 240px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.heure {
+  font-size: 4em;
+  margin-top: 7.5px;
+  color: white;
+}
+
+img {
+  width: 80%;           /* ou 400px, selon ce que tu veux */
+  height: auto;         /* permet de garder les proportions */
+  display: block;       /* optionnel, pour éviter les marges parasites */
+  margin: 0 auto;       /* centre l’image */
+  border-radius: 10px;  /* optionnel, coins arrondis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* optionnel, ombre douce */
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  margin-top: 60px;
+  color: #008080;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
+.Pied p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 .navbar{
     padding: 10px;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around; /* Pour répartir les liens sur la ligne */
-  }
-  
-li{
-    display: inline;
+.lieu {
+  margin-bottom: 50px;
 }
 
-.Barre_nav {
-    text-decoration: none;
-    color: #008080;
-    padding: 10px;
-    display: inline-block;
-    margin-left: -5px;
-    margin-right: 5px;
-    background-color: white;
-    font-size: 20px;
-  }
-
-.Barre_nav:hover{
-    color : #1F5EAA
+.adresse {
+  font-size: 2em;
+  color: white;
+  margin-top: 10px;
 }
 
-footer{
-    text-align: center;
-    background-color: white;
-}
-.Pied{
-    color: #008080
-
+.bandeau {
+  background-color: white; /* fond blanc */
+  padding: 30px 20px;
+  margin: 40px 0;
+  text-align: center;
 }
 
-div{
-    display:flex;
-    justify-content: center;
+.bandeau h2 {
+  color: #008080; /* bleu canard */
+  font-family: 'Dancing Script', cursive;
+  font-size: 6em;
+  margin: 0;
 }
 
-
-.container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.annonce {
+  width: 200px; /* taille du carré */
+  height: 200px;
+  background-color: white;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto; /* centre horizontalement */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* petite ombre pour le relief */
 }
 
-.Text_1{
-    text-align: center;
-    color: #008080;
-    border: 10px #008080 solid;
-    margin-left: 50px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: white;
+.annonce p {
+  transform: rotate(-45deg); /* remet le texte droit */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  color: #008080; /* bleu canard */
+  margin: 0;
 }
 
-.Text_2{
-    text-align: center;
-    color: #008080;
-    border: 10px #008080 solid;
-    margin-right: 50px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: white;
+.invitation {
+  background-color: white;
+  color: #008080; /* bleu canard */
+  border: 3px solid #008080;
+  border-radius: 20px; /* bords arrondis */
+  padding: 20px 30px 0px 30px; /* haut, droite, bas, gauche */
+  margin: 40px auto;
+  max-width: 800px; /* limite la largeur pour la lisibilité */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
 }
 
-.caption_coeur{
-    font-size: 20px;
-    color: #008080;
-    text-decoration: underline;
+.date {
+    font-family: 'Dancing Script', cursive;
 }
 
-.caption_chateau{
-    font-size: 20px;
-    color: #008080;
-    text-decoration: underline;
-}
-
-.caption_programme{
-    font-size: 20px;
-    color: #008080;
-    text-decoration: underline;
-}
-
-.caption_eglise{
-    font-size: 20px;
-    color: #008080;
-    text-decoration: underline;
-}
-
-.caption_manoir{
-    font-size: 20px;
-    color: #008080;
-    text-decoration: underline;
-}
-
-
-.Adresse_eglise{
-    font-size: 20px;
-    color: #008080;
-    text-align: center;
-}
-
-.Adresse_manoir{
-    font-size: 20px;
-    color: #008080;
-    text-align: center;
-}
-
-.Texte_liste{
-    font-size: 20px;
-    color: #008080;
-    text-align: center;
-}
-
-.Lien_liste{
-    font-size: 20px;
-    color: #008080;
-    text-align: center;
-}
-
-.Lien_liste:hover{
-    color : white;
+.date p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6em;
+  color: white; /* blanc */
+  margin: 0;
 }
