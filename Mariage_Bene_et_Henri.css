@@ -31,15 +31,34 @@ header h2 {
 }
 
 .navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .navbar li {
   margin: 0 15px;
 }
+
+.navbar li a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+}
+
 
 .Barre_nav {
   text-decoration: none;
@@ -223,7 +242,18 @@ iframe {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+
+  .navbar ul {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+  .navbar li a {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+  }
+
   header h1 {
     font-size: 3.5em;
   }
@@ -305,4 +335,14 @@ a::after {
 
 a:hover::after {
     width: 100%;
+}
+
+.lien-logement {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.lien-logement:hover {
+    color: #ffd700; /* jaune doré au survol */
 }
