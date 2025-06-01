@@ -37,7 +37,7 @@ header h2 {
     list-style: none;
     padding: 0;
     margin: 1rem 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Empêche l'empilement */
 }
 
 .navbar li {
@@ -246,12 +246,11 @@ iframe {
 
   .navbar ul {
         gap: 1rem;
-        justify-content: center;
     }
 
   .navbar li a {
-      font-size: 1rem;
-      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
   }
 
   header h1 {
