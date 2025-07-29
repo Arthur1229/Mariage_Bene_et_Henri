@@ -240,7 +240,37 @@ iframe {
   height: 400px;
 }
 
+.rectangle-arrondi {
+  background-color: #008080;         /* Fond doux, style mariage */
+  border: 2px solid white;         /* Bordure rose poudré */
+  border-radius: 20px;               /* Coins arrondis */
+  padding: 40px 20px;
+  width: 400px;
+  margin: 50px auto;                 /* Centrage horizontal + marge haut/bas */
+  text-align: center;                /* Centre le bouton à l’intérieur */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
 
+.conteneur-bouton {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color:  #008080;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color:  #008080;
+}
 
 @media screen and (max-width: 600px) {
 
